@@ -44,3 +44,7 @@ body {
   padding: 0 1rem;
   margin: 0 auto;
 }
+
+ul {
+  list-style: none;
+}

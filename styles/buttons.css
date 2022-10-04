@@ -1,0 +1,6 @@
+.button-genres {
+    height: 2rem;
+    width: 3.625rem;
+    border-radius: var(--radius-1);
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}

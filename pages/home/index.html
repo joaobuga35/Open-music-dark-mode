@@ -5,11 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/nav-bar.css">
+    <link rel="stylesheet" href="/styles/list.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
     <link rel="stylesheet" href="index.css" />
     <title>Open Music</title>
   </head>
   <body>
-    <main></main>
+    <header class="container head-title">
+      <h1>Open Music</h1>
+      <button id="darkMode">
+        <span>
+          <img id="iconMoon" src="/assets/img/moon.svg" alt="lua">
+        </span>
+      </button>
+    </header>
+    <main class="container">
+      <section>
+        <h2>Gênero Musical</h2>
+
+        <ul class="list-genres">
+          <li>
+            <p class="button-genres">Todos</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Pop</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">MPB</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Forró</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Samba</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Baião</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Rap</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Hip-Hop</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Rock</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Reggae</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Country</p>
+          </li>
+        
+          <li>
+            <p class="button-genres">Gospel</p>
+          </li>
+        </ul>
+      </section>
+      
+      <section>
+        <label>
+          <h2>Definir Preço</h2>
+          <span>Até R$ 240,00</span>
+        </label>
+        <input type="range" name="values" id="rangeValues" min="0" max="150" step="5">
+      </section>
+
+      <section>
+        <h2>Albums Encontrados</h2>
+        <ul>
+          <li>
+            <img src="/assets/img/1.jpg" alt="Foto Album">
+            <div>
+              <span>Scalene</span>
+              <span>2017</span>
+              <h3>Magnetite</h3>
+              <div>
+                <p>R$ 70,00</p>
+                <button>Comprar</button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="/assets/img/1.jpg" alt="Foto Album">
+            <div>
+              <span>Scalene</span>
+              <span>2017</span>
+              <h3>Magnetite</h3>
+              <div>
+                <p>R$ 70,00</p>
+                <button>Comprar</button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="/assets/img/1.jpg" alt="Foto Album">
+            <div>
+              <span>Scalene</span>
+              <span>2017</span>
+              <h3>Magnetite</h3>
+              <div>
+                <p>R$ 70,00</p>
+                <button>Comprar</button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <img src="/assets/img/1.jpg" alt="Foto Album">
+            <div>
+              <span>Scalene</span>
+              <span>2017</span>
+              <h3>Magnetite</h3>
+              <div>
+                <p>R$ 70,00</p>
+                <button>Comprar</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="../../scripts/theme.js"></script>
     <script src="./productsData.js"></script>
     <script src="./index.js"></script>
