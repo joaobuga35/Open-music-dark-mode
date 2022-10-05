@@ -13,7 +13,7 @@ function renderCard(list){
         const pPrice      = document.createElement('p')
         const buttonPrice = document.createElement('button')
 
-        li.classList.add('card-albums')
+        li.classList = 'card-albums animation'
         img.src = element.img
 
         divAlbum.classList.add('div-albums-description')
@@ -38,20 +38,50 @@ function renderCard(list){
     });
     return listAlbum
 }
+function filterButtons(){
+    const buttons = document.querySelectorAll('.button-genres')
+    const mainList = document.querySelector('#list-albums-id')
 
-renderCard(products)
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.innerText
 
-{/* <li class="card-albums">
-    <img src="/assets/img/1.jpg" alt="Foto Album">
-        <div class="div-albums-description">
-            <div class="div-albums-year">
-                <span>Scalene</span>
-                <span>2017</span>
-            </div>
-            <h3>Magnetite</h3>
-            <div class="div-price-btnBuy">
-                <p>R$ 70,00</p>
-                <button class="button-buyAndPrice">Comprar</button>
-            </div>
-        </div>
-</li> */}
+            if (filter === 'Todos') {
+                mainList.innerHTML = ""
+                renderCard(products)
+            }
+            const datasFiltered = filterDatas(filter)
+            mainList.innerHTML = ""
+            renderCard(datasFiltered)
+        })
+    });
+}
+
+filterButtons()
+
+function filterDatas(text){
+    const newFilter = products.filter((item) => {
+        return item.category.includes(text)
+    })
+    return newFilter
+}
+
+function filterInput (){
+    const inputRange = document.querySelector('#rangeValues')
+    const priceValue = document.querySelector('#price')
+    const mainList = document.querySelector('#list-albums-id')
+    const buttons = document.querySelectorAll('.button-genres')
+
+
+    inputRange.addEventListener('input', () => {
+        priceValue.innerText = `R$ ${inputRange.value},00`
+
+        const newArrayPrice = products.filter((element) => {
+            return inputRange.value > element.price
+        })
+        mainList.innerHTML = ""
+        renderCard(newArrayPrice)
+    })
+}
+
+filterInput ()

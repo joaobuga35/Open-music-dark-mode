@@ -11,10 +11,10 @@
     justify-content: center;
     align-items: center;
     height: 2rem;
-    width: 4.563rem;
+    width: 4.6rem;
     background-color: var(--color-grey-8);
     color: var(--color-grey-2);
-    font-size: var(--font-3);
+    font-size: var(--font-4);
     border-radius: var(--radius-1);
     padding: 0rem 2rem 0rem 2rem;
     cursor: pointer;
@@ -34,7 +34,7 @@
     width: 4.563rem;
     background-color: var(--color-grey-8);
     color: var(--color-grey-2);
-    font-size: var(--font-3);
+    font-size: var(--font-4);
     border-radius: var(--radius-1);
     padding: 0rem 0.5rem 0rem 0.5rem;
     cursor: pointer;

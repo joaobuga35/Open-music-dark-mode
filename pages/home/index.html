@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/styles/listAndCards.css">
     <link rel="stylesheet" href="/styles/buttons.css">
     <link rel="stylesheet" href="/styles/input.css">
+    <link rel="stylesheet" href="/styles/animation.css">
     <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="/assets/img/reprodutor-de-musica.png" type="image/x-icon">
     <title>Open Music</title>
   </head>
   <body>
@@ -54,7 +56,7 @@
             <p>Rap</p>
           </li>
         
-          <li class="button-hiphop">
+          <li class="button-genres button-hiphop">
             <p>Hip-Hop</p>
           </li>
         
@@ -79,14 +81,14 @@
       <section>
         <label class="price">
           <h2 class="title">Definir Preço</h2>
-          <span class="title">Até R$ 240,00</span>
+          <span id="price" class="title"></span>
         </label>
-        <input type="range" name="values" id="rangeValues" min="0" max="150" step="5">
+        <input type="range" name="values" id="rangeValues" min="0" max="150" step="0">
       </section>
 
       <section class="section-albums">
         <h2 class="title title-albums">Albums Encontrados</h2>
-        <ul class="list-albums">
+        <ul id="list-albums-id" class="list-albums">
         </ul>
       </section>
     </main>
