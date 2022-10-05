@@ -26,14 +26,29 @@
   --font-1: 1.75rem;
   --font-2: 1rem;
   --font-3: 0.875rem;
+  --font-4: 0.75rem;
 
   --radius-1: 0.25rem;
   --container: 45rem;
 }
 
+.dark-mode:root {
+  --color-grey-0: #FDFEFF;
+  --color-grey-1:#F8F9FA;
+  --color-grey-2: #F1F3F5;
+  --color-grey-3: #DEE2E6;
+  --color-grey-4: #CED4DA;
+  --color-grey-5: #ADB5BD;
+  --color-grey-6: #868e96;
+  --color-grey-7: #868E96;
+  --color-grey-8: #2B2F33;
+  --color-grey-9: #212529;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
+  color: var(--color-grey-1);
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-grey-9);
 }
@@ -45,6 +60,19 @@ body {
   margin: 0 auto;
 }
 
+.icon-button {
+  color: var(--color-grey-7);
+}
+
 ul {
   list-style: none;
+}
+
+.title {
+  font-size: var(--font-2);
+  font-weight: 600;
+}
+
+.section-albums {
+  margin-bottom: 2.75rem;
 }

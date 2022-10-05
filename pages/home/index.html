@@ -6,137 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
     <link rel="stylesheet" href="/styles/nav-bar.css">
-    <link rel="stylesheet" href="/styles/list.css">
+    <link rel="stylesheet" href="/styles/listAndCards.css">
     <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/input.css">
     <link rel="stylesheet" href="index.css" />
     <title>Open Music</title>
   </head>
   <body>
     <header class="container head-title">
-      <h1>Open Music</h1>
-      <button id="darkMode">
+      <h1>open music</h1>
+      <button id="darkMode" class="button-mode">
         <span>
-          <img id="iconMoon" src="/assets/img/moon.svg" alt="lua">
+          <img id="iconMode" src="/assets/img/moon.svg" alt="lua">
         </span>
       </button>
     </header>
     <main class="container">
       <section>
-        <h2>Gênero Musical</h2>
+        <h2 class="title">Gênero Musical</h2>
 
         <ul class="list-genres">
-          <li>
-            <p class="button-genres">Todos</p>
+          <li class="button-genres">
+            <p>Todos</p>
           </li>
         
-          <li>
-            <p class="button-genres">Pop</p>
+          <li class="button-genres">
+            <p>Pop</p>
           </li>
         
-          <li>
-            <p class="button-genres">MPB</p>
+          <li class="button-genres">
+            <p>MPB</p>
           </li>
         
-          <li>
-            <p class="button-genres">Forró</p>
+          <li class="button-genres">
+            <p>Forró</p>
           </li>
         
-          <li>
-            <p class="button-genres">Samba</p>
+          <li class="button-genres">
+            <p>Samba</p>
           </li>
         
-          <li>
-            <p class="button-genres">Baião</p>
+          <li class="button-genres">
+            <p>Baião</p>
           </li>
         
-          <li>
-            <p class="button-genres">Rap</p>
+          <li class="button-genres">
+            <p>Rap</p>
           </li>
         
-          <li>
-            <p class="button-genres">Hip-Hop</p>
+          <li class="button-hiphop">
+            <p>Hip-Hop</p>
           </li>
         
-          <li>
-            <p class="button-genres">Rock</p>
+          <li class="button-genres">
+            <p>Rock</p>
           </li>
         
-          <li>
-            <p class="button-genres">Reggae</p>
+          <li class="button-genres">
+            <p>Reggae</p>
           </li>
         
-          <li>
-            <p class="button-genres">Country</p>
+          <li class="button-genres">
+            <p>Country</p>
           </li>
         
-          <li>
-            <p class="button-genres">Gospel</p>
+          <li class="button-genres">
+            <p>Gospel</p>
           </li>
         </ul>
       </section>
       
       <section>
-        <label>
-          <h2>Definir Preço</h2>
-          <span>Até R$ 240,00</span>
+        <label class="price">
+          <h2 class="title">Definir Preço</h2>
+          <span class="title">Até R$ 240,00</span>
         </label>
         <input type="range" name="values" id="rangeValues" min="0" max="150" step="5">
       </section>
 
-      <section>
-        <h2>Albums Encontrados</h2>
-        <ul>
-          <li>
-            <img src="/assets/img/1.jpg" alt="Foto Album">
-            <div>
-              <span>Scalene</span>
-              <span>2017</span>
-              <h3>Magnetite</h3>
-              <div>
-                <p>R$ 70,00</p>
-                <button>Comprar</button>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <img src="/assets/img/1.jpg" alt="Foto Album">
-            <div>
-              <span>Scalene</span>
-              <span>2017</span>
-              <h3>Magnetite</h3>
-              <div>
-                <p>R$ 70,00</p>
-                <button>Comprar</button>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <img src="/assets/img/1.jpg" alt="Foto Album">
-            <div>
-              <span>Scalene</span>
-              <span>2017</span>
-              <h3>Magnetite</h3>
-              <div>
-                <p>R$ 70,00</p>
-                <button>Comprar</button>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <img src="/assets/img/1.jpg" alt="Foto Album">
-            <div>
-              <span>Scalene</span>
-              <span>2017</span>
-              <h3>Magnetite</h3>
-              <div>
-                <p>R$ 70,00</p>
-                <button>Comprar</button>
-              </div>
-            </div>
-          </li>
+      <section class="section-albums">
+        <h2 class="title title-albums">Albums Encontrados</h2>
+        <ul class="list-albums">
         </ul>
       </section>
     </main>
