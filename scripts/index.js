@@ -38,6 +38,7 @@ function renderCard(list){
     });
     return listAlbum
 }
+renderCard(products)
 function filterButtons(){
     const buttons = document.querySelectorAll('.button-genres')
     const mainList = document.querySelector('#list-albums-id')
